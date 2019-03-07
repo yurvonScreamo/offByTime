@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Закрой меня</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>62</x>
+      <y>34</y>
+      <width>491</width>
+      <height>278</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="labelTimeNow">
+         <property name="text">
+          <string>Сейчас</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelAction">
+         <property name="text">
+          <string>Выберите дату, время и действие</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTime">
+         <property name="keyboardTracking">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="powerPc">
+         <property name="text">
+          <string>Выключить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="resetPc">
+         <property name="text">
+          <string>Перезагрузить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="sleepPc">
+         <property name="text">
+          <string>Сон</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="labelSave">
+         <property name="minimumSize">
+          <size>
+           <width>450</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="buttonCancel">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Отмена</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="buttonStart">
+         <property name="text">
+          <string>Применить</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="Line" name="line">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="Line" name="line_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Настроить раписание </string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
